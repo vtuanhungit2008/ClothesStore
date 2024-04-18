@@ -8,11 +8,12 @@ import Product from './Pages/Product';
 import LoginSignUp from './Pages/LoginSignUp';
 import Cart from './Pages/Cart';
 import Hero from './Components/Hero/Hero';
+import Fotter from './Components/Fotter/Fotter';
 function App() {
   return (
     <BrowserRouter>
      <Navbar></Navbar>
-      <Hero/>
+      
     <Routes>
       <Route path='/' element={<Shop/>}/>
       <Route path='/mens' element={<ShopCate cate = "men"/>}/>
@@ -23,6 +24,7 @@ function App() {
       <Route path='/cart' element={<Cart/> }/>
       <Route path='/login' element={<LoginSignUp/> }/>
     </Routes>
+    <Fotter/>
     </BrowserRouter>
    
   );
