@@ -7,11 +7,12 @@ import ShopCate from './Pages/ShopCate';
 import Product from './Pages/Product';
 import LoginSignUp from './Pages/LoginSignUp';
 import Cart from './Pages/Cart';
+import Hero from './Components/Hero/Hero';
 function App() {
   return (
     <BrowserRouter>
      <Navbar></Navbar>
-    
+      <Hero/>
     <Routes>
       <Route path='/' element={<Shop/>}/>
       <Route path='/mens' element={<ShopCate cate = "men"/>}/>
